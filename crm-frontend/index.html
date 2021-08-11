@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CRM</title>
+  <script defer src="main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="logo">
+  </div>
+  <form class="header__search">
+    <input class="header-search__input COLOR_TXT-GREY" type="search" placeholder="Введите запрос">
+  </form>
+</header>
+<div class="wrap-background">
+  <div class="container">
+    <h3 class="container__h3">Клиенты</h3>
+    <table class="table">
+      <tr class="table__table-row">
+        <th class="table-row__table-head COLOR_FIRM">ID <span class="table-head__span-arrow_down"></span></th>
+        <th class="table-row__table-head COLOR_TXT-GREY">Фамилия Имя Отчество <span class="table-head__span-arrow_up"></span><span class="COLOR_FIRM"> А-Я</span></th>
+        <th class="table-row__table-head COLOR_TXT-GREY">Дата и время создания <span class="table-head__span-arrow_up"></span></th>
+        <th class="table-row__table-head COLOR_TXT-GREY">Последние изменения <span class="table-head__span-arrow_up"></span></th>
+        <th class="table-row__table-head COLOR_TXT-GREY">Контакты</th>
+        <th class="table-row__table-head COLOR_TXT-GREY">Действия</th>
+      </tr>
+      <tr class="table__table-row">
+        <td class="table-row__table-data">123455</td>
+        <td class="table-row__table-data">Скворцов Денис Юрьевич</td>
+        <td class="table-row__table-data">21.02.2021</td>
+        <td class="table-row__table-data">21.02.2021</td>
+        <td class="table-row__table-data">1 2 3 4 +6</td>
+        <td class="table-row__table-data">
+          <button class="table-data__button-edit-client"><span class="button-edit-client__span-img-action_edit"></span>Изменить</button>
+          <button class="table-data__button-edit-client"><span class="button-edit-client__span-img-action_delete"></span>Удалить</button>
+        </td>
+      </tr>
+      <tr class="table__table-row">
+        <td class="table-row__table-data">123455</td>
+        <td class="table-row__table-data">Скворцов Денис Юрьевич</td>
+        <td class="table-row__table-data">21.02.2021</td>
+        <td class="table-row__table-data">21.02.2021</td>
+        <td class="table-row__table-data">1 2 3 4 +6</td>
+        <td class="table-row__table-data">
+          <button class="table-data__button-edit-client"><span class="button-edit-client__span-img-action_edit"></span> Изменить</button>
+          <button class="table-data__button-edit-client"><span class="button-edit-client__span-img-action_delete"></span> Удалить</button>
+        </td>
+      </tr>
+    </table>
+    <button class="container__button-add-client"><span class="button-add-client__span-img-action"></span>Добавить клиента</button>
+
+    <div class="popup-edit-client">
+      <h3 class="popup-edit-client__h3">Новый клиент</h3>
+      <form class="popup-edit-client__form-edit-client">
+        <div class="form-edit-client__input-wrap">
+          <input class="input-wrap__input" type="text" name="" required>
+          <label class="input-wrap__label">Фамилия</label>
+        </div>
+        <div class="form-edit-client__input-wrap">
+          <input class="input-wrap__input" type="text" name="" required>
+          <label class="input-wrap__label">Имя</label>
+        </div>
+        <div class="form-edit-client__input-wrap">
+          <input class="input-wrap__input" type="text" name="">
+          <label class="input-wrap__label">Отчество</label>
+        </div>
+      </form>
+      <div class="contact-edit-block">
+        <div class="contact-edit-block__contact-field">
+          <select class="contact-field__select-contact-type">
+            <option class="select-contact-type__option-contact-type" value="tel">Телефон</option>
+            <option class="select-contact-type__option-contact-type" value="additional-tel">Доп. телефон</option>
+            <option class="select-contact-type__option-contact-type" value="email">Email</option>
+            <option class="select-contact-type__option-contact-type" value="vk">Vk</option>
+            <option class="select-contact-type__option-contact-type" value="facebook">Facebook</option>
+          </select>
+          <input class="contact-field__input-contact" placeholder="Введите данные контакта">
+          <button class="contact-field__button-delete-contact"></button>
+        </div>
+        <div class="contact-edit-block__contact-field">
+          <select class="contact-field__select-contact-type">
+            <option class="select-contact-type__option-contact-type" value="tel">Телефон</option>
+            <option class="select-contact-type__option-contact-type" value="additional-tel">Доп. телефон</option>
+            <option class="select-contact-type__option-contact-type" value="email">Email</option>
+            <option class="select-contact-type__option-contact-type" value="vk">Vk</option>
+            <option class="select-contact-type__option-contact-type" value="facebook">Facebook</option>
+          </select>
+          <input class="contact-field__input-contact" placeholder="Введите данные контакта">
+          <button class="contact-field__button-delete-contact"></button>
+        </div>
+        <button class="contact-edit-block__button-add-contact">
+          <span class="button-add-contact__span-img-action"></span>
+          Добавить контакт
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
